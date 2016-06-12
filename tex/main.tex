@@ -1,0 +1,39 @@
+\documentclass[oneside,final,12pt,a4paper]{article}%final or draft
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,main=russian]{babel}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage[left=30mm, top=20mm, right=20mm, bottom=20mm]{geometry}
+\usepackage{indentfirst}
+\usepackage{color}
+
+
+\usepackage{cmap}
+\pdfgentounicode=1
+
+
+\sloppy
+\Russian
+
+\setlength{\parindent}{1.25cm}
+
+\newcounter{tcounter}
+\newcommand{\The}{\addtocounter{tcounter}{1}\\{\bf Теорема \arabic{tcounter}:~}}
+\newcounter{lcounter}
+\newcommand{\Lem}{\addtocounter{lcounter}{1}\\{\bf Лемма \arabic{tcounter}:~}}
+\newcounter{dcounter}
+\newcommand{\Def}{\addtocounter{dcounter}{1}\\{\bf Определение \arabic{tcounter}:~}}
+
+
+\begin{document}
+\begin{center}
+	ТЧМК - глоссарий
+\end{center}
+\input{chapters/contents.tex}
+\input{chapters/01.tex}
+\input{chapters/02.tex}
+\input{chapters/03.tex}
+\input{chapters/04.tex}
+\input{chapters/05.tex}
+\input{chapters/06.tex}
+\end{document}
